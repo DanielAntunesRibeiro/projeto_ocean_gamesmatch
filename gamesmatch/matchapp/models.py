@@ -1,11 +1,13 @@
-from msvcrt import LK_LOCK
+#from msvcrt import LK_LOCK
 from re import L
 from unittest.util import _MAX_LENGTH
 from django.db import models
+#from django.contrib.auth.models import User
 
 class perfil(models.Model):
+    #email = models.ForeignKey(User.email)
     nome = models.CharField(max_length=255)
-    cpf = models.PositiveIntegerField.primary_key()
+    cpf = models.PositiveIntegerField(primary_key=True)
     game1 = models.CharField(max_length=255)
     pontuacao1 = models.PositiveIntegerField()
     game2 = models.CharField(max_length=255, blank=True, null=True)
