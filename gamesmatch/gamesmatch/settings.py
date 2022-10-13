@@ -55,7 +55,7 @@ ROOT_URLCONF = 'gamesmatch.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['gamesmatch/templates'],
+        'DIRS': ['matchapp/templates','matchapp/templates/img'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
